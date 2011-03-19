@@ -1,0 +1,22 @@
+Installation
+
+# Install rvm if needed and follow prompts
+gem install rvm
+
+# Download the project
+git clone ...
+cd writersresidence_monitoring
+
+# Follow prompts from rvm to install the right ruby and create the gemset then
+rvm gemset use 'writersresidence_monitoring'
+
+# Install the depends
+gem install bundler
+bundle
+
+# Run the tests
+cucumber 
+
+I love:
+https://github.com/cayblood/cucumber-webrat-mechanize-example
+from where this is completely stolen.
