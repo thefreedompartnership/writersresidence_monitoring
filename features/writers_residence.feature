@@ -44,12 +44,12 @@ Feature: Writer's Residence
 		Then I should see "Blog posts by Monica Shaw"
 	
 	Scenario: Customer custom domain
-		When I go to "http://monicashaw.com"
-		Then I should see "Home of Monica Shaw"
+		When I go to "http://indietim.com"
+		Then I should see "Home of Tim Harding"
 
 	Scenario: Customer custom domain blog
-		When I go to "http://monicashaw.com/blog"
-		Then I should see "Blog posts by Monica Shaw"
+		When I go to "http://indietim.com/blog"
+		Then I should see "Blog posts by Tim Harding"
 
 	Scenario: Customer custom domain www
 		When I go to "http://www.monicashaw.com"
@@ -66,5 +66,5 @@ Feature: Writer's Residence
 		Then I should be redirected to "http://writersresidence.com/system/attachments/files/1054/original/PACK_EXPO_postcard.pdf"
 		When I get "http://www.monicashaw.com/attachments/0000/1054/PACK_EXPO_postcard.pdf"
 		Then I should be redirected to "http://writersresidence.com/system/attachments/files/1054/original/PACK_EXPO_postcard.pdf"
-		When I get "http://monicashaw.com/attachments/0000/1054/PACK_EXPO_postcard.pdf"
+		When I get "http://indietim.com/attachments/0000/1054/PACK_EXPO_postcard.pdf"
 		Then I should be redirected to "http://writersresidence.com/system/attachments/files/1054/original/PACK_EXPO_postcard.pdf"
