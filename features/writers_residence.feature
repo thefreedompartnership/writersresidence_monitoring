@@ -51,7 +51,7 @@ Feature: Writer's Residence
   
   Scenario: Customer site blog
     When I go to "http://monicashaw.writersresidence.com/blog"
-    Then I should see "Blog posts by Monica Shaw"
+    Then I should see "Blog by Monica Shaw"
   
   Scenario: Customer custom domain
     When I go to "http://indietim.com"
@@ -59,7 +59,7 @@ Feature: Writer's Residence
   
   Scenario: Customer custom domain blog
     When I go to "http://indietim.com/blog"
-    Then I should see "Blog posts by Tim Harding"
+    Then I should see "Blog by Tim Harding"
   
   Scenario: Customer custom domain www
     When I go to "http://www.monicashaw.com"
@@ -67,7 +67,7 @@ Feature: Writer's Residence
   
   Scenario: Customer custom domain blog www
     When I go to "http://www.monicashaw.com/blog"
-    Then I should see "Blog posts by Monica Shaw"
+    Then I should see "Blog by Monica Shaw"
 
   # Less meaning here about what each URL represents?
   Scenario Outline: Attachment redirects main site
